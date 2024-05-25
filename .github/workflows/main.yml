@@ -24,4 +24,4 @@ jobs:
         install.packages("mongolite")
       shell: Rscript {0} 
     - name: Scrape Data Dosen
-      run: Rscript prak14.R
+      run: Rscript scrape_dosen.R
