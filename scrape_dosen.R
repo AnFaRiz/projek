@@ -1,4 +1,9 @@
+message('Loading Packages')
 library(rvest)
+library(tidyverse)
+library(mongolite)
+
+message('Scraping Data')
 url1<-"http://dosen.unand.ac.id/web/pencarian?cari=A&act=dir&_tog1149016d=all"
 a1 <- read_html(url) %>% html_nodes("table") %>% .[[1]] %>% html_table()
 a2 <- read_html(url) %>% html_nodes("table") %>% .[[1]] %>% html_table()
@@ -38,7 +43,7 @@ e2 <- read_html(url5) %>% html_nodes("table") %>% .[[1]] %>% html_table()
 e11 <- t(e1[,2])
 colnames(e11)<-as.vector(e1[,1])$X1
 rownames(e11)<-NULL
-e22 <- a
+e22 <- e2
 
 url6<-"http://dosen.unand.ac.id/web/pencarian?cari=F&act=dir&_tog1149016d=all"
 f1 <- read_html(url6) %>% html_nodes("table") %>% .[[1]] %>% html_table()
@@ -230,20 +235,20 @@ z22 <- z2
 
 
 gab <- list(a22, b22, c22, d22, e22, f22, g22, h22, i22, j22, k22, l22, m22,
-                n22, o22, p22, q22, r22, s22, t22, u22, v22, w22, x22, y22, z22)
+                n22, o22, p22, q22, r22, s22, t22, u22, v22, w22, y22, z22)
 
-# Misalkan gab adalah list yang berisi tabel-tabel Anda
+  datafin <- bind_rows(gab)
 
-# Hapus tabel yang kosong dari list
-gab_clean <- Filter(function(tbl) nrow(tbl) > 0, gab)
+#MONGODB
+message('Input Data to MongoDB Atlas')
+atlas_conn <- mongo(
+  collection = Sys.getenv("ATLAS_COLLECTION"),
+  db         = Sys.getenv("ATLAS_DB"),
+  url        = Sys.getenv("ATLAS_URL")
+)
 
-# Gabungkan tabel-tabel yang tidak kosong
-if (length(gab_clean) > 0) {
-  datafin <- bind_rows(gab_clean, .id = "source_table")
-} else {
-  datafin <- NULL  # Atau hasilkan output yang sesuai jika tidak ada tabel yang tidak kosong
-}
-
+atlas_conn$insert(datafin)
+rm(atlas_conn)
 
 
 #https://crontab.guru/#*_*_*_*_*
