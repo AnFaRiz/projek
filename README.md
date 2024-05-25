@@ -3,7 +3,7 @@
 [![scrape_hashtag](https://github.com/rismandwij/tiktok_hashtag/actions/workflows/main.yml/badge.svg)](https://github.com/rismandwij/tiktok_hashtag/actions/workflows/main.yml)
 
 <p align="center" width="100%">
-    <img width="70%" src="https://kaydee.net/blog/wp-content/uploads/2022/07/what-is-a-hashtag-camel-case-1024x504.png">
+    <img width="70%" src="https://github.com/AnFaRiz/projek/blob/main/1.PNG">
 </p>
 
 
