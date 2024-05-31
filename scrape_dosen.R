@@ -21,7 +21,7 @@ for (letter in letters) {
     df_master <- rbind(df_master, a2)
   }
 }
-
+df_master=df_master[,-1]
 
 #MONGODB
 message('Input Data to MongoDB Atlas')
