@@ -4,6 +4,8 @@ library(tidyverse)
 library(mongolite)
 
 message('Scraping Data')
+library(rvest)
+
 # Inisialisasi dataframe master
 df_master <- data.frame()
 
@@ -29,3 +31,9 @@ atlas_conn <- mongo(
   db         = Sys.getenv("ATLAS_DB"),
   url        = Sys.getenv("ATLAS_URL")
 )
+
+atlas_conn$insert(df_master)
+rm(atlas_conn)
+
+
+#https://crontab.guru/#*_*_*_*_*
