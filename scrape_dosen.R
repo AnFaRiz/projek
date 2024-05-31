@@ -4,7 +4,7 @@ library(tidyverse)
 library(mongolite)
 
 message('Scraping Data')
-url1<-"http://dosen.unand.ac.id/web/pencarian?cari=W&act=dir&_tog1149016d=all"
+url1<-"http://dosen.unand.ac.id/web/pencarian?cari=X&act=dir&_tog1149016d=all"
 a2 <- read_html(url1) %>% html_nodes("table") %>% .[[1]] %>% html_table()
 a22 <- a2
 
