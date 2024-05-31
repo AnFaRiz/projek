@@ -1,6 +1,6 @@
 # **Profil Dosen Universitas Andalas Scraping**
 
-[![scrape_Dosen Universitas Andalas](https://github.com/AnFaRiz/projek/actions/workflows/main.yml)/badge.svg)](https://github.com/AnFaRiz/projek/actions/workflows/main.yml)
+[![Scrape_Dosen Universitas Andalas](https://github.com/AnFaRiz/projek/actions/workflows/main.yml/badge.svg)](https://github.com/AnFaRiz/projek/actions/workflows/main.yml)
 
 <p align="center" width="100%">
     <img width="70%" src="https://github.com/AnFaRiz/projek/blob/main/1.PNG">
