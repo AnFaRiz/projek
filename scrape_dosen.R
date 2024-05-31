@@ -4,6 +4,7 @@ library(tidyverse)
 library(mongolite)
 
 message('Scraping Data')
+
 # Inisialisasi dataframe master
 df_master <- data.frame()
 
