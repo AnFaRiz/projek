@@ -1,6 +1,6 @@
 # **Profil Dosen Universitas Andalas Scraping**
 
-[![scrape_Dosen Universitas Andalas](https://github.com/rismandwij/tiktok_hashtag/actions/workflows/main.yml/badge.svg)](https://github.com/rismandwij/tiktok_hashtag/actions/workflows/main.yml)
+[![scrape_Dosen Universitas Andalas](https://github.com/AnFaRiz/projek/actions/workflows/main.yml)/badge.svg)](https://github.com/AnFaRiz/projek/actions/workflows/main.yml)
 
 <p align="center" width="100%">
     <img width="70%" src="https://github.com/AnFaRiz/projek/blob/main/1.PNG">
@@ -22,11 +22,12 @@ Berikut contoh dokumen pada Mongo DB :
 
 ```
 {
-"nama":"Dr. A. Irzal Rias, SH.MH",
-"jabatan":"Lektor Kepala",
-"status":{"PNS"},
-"fakultas":{"FAKULTAS HUKUM"},"
-"jurusan":{"Ilmu Hukum"},
+"Nama":"Dr. A. Irzal Rias, SH.MH",
+"Jabatan":"Lektor Kepala",
+"Status":{"PNS"},
+"Fakultas":{"FAKULTAS HUKUM"},"
+"Jurusan":{"Ilmu Hukum"},
+"Waktu_Scraping":{"2024-05-31"}
 }
 ```
 
