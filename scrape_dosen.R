@@ -21,7 +21,7 @@ for (letter in letters) {
     df_master <- rbind(df_master, a2)
   }
 }
-df_master=df_master[,-1]
+dosen <- df_master[,-1]
 
 #MONGODB
 message('Input Data to MongoDB Atlas')
@@ -31,7 +31,7 @@ atlas_conn <- mongo(
   url        = Sys.getenv("ATLAS_URL")
 )
 
-atlas_conn$insert(df_master)
+atlas_conn$insert(dosen)
 rm(atlas_conn)
 
 
