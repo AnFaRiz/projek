@@ -22,8 +22,7 @@ for (letter in letters) {
     df_master <- rbind(df_master, a2)
   }
 }
-df_master <- df_master %>%
-  filter(rowSums(. == "No results found.") != ncol(.))
+df_master <- filter(df_master, rowSums(df_master == "No results found.") != ncol(df_master))
 dosen <- df_master[,-1]
 dosen$Waktu_Scraping<-Sys.Date()
 
