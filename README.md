@@ -31,9 +31,9 @@ Berikut contoh dokumen pada Mongo DB :
 }
 ```
 
-## :computer: **Visualisasi**
+## :computer: **Analisis dan Visualisasi**
 
-Berikut link visualisasi dari data yang telah di scraping : https://rpubs.com/rismandwijs/1054178
+Berikut link Analisis dan Visualisasi dari data yang telah di _scraping_ : https://ipb.link/scrapingwebdosenunand
 
 ## :walking: **Pengembang**
 **Anwar Fajar Rizki (G1501231003)**
