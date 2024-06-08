@@ -2,6 +2,7 @@ message('Loading Packages')
 library(rvest)
 library(tidyverse)
 library(mongolite)
+library(dplyr)
 
 message('Scraping Data')
 
