@@ -1,4 +1,4 @@
-# **Profil Dosen Universitas Andalas Scraping**
+# **Profil Dosen Universitas Andalas _Scraping_**
 
 [![Scrape_Dosen Universitas Andalas](https://github.com/AnFaRiz/projek/actions/workflows/main.yml/badge.svg)](https://github.com/AnFaRiz/projek/actions/workflows/main.yml)
 
@@ -13,7 +13,7 @@ Profil Dosen Universitas Andalas (UNAND) memberikan gambaran singkat tetapi info
 </p>
 
 <p align="justify">
-Pada project kali ini dilakukan scraping pada website http://dosen.unand.ac.id/. Website tersebut berisi informasi mengenai profil para dosen yang mengajar di universitas tersebut. Melalui scraping ini, kita dapat mengumpulkan data seperti nama dosen, jabatan, fakultas tempat bekerja, status kepegawaian, dan jurusan atau bidang studi yang menjadi fokus utama dari masing-masing dosen. Data ini nantinya dapat digunakan untuk berbagai keperluan analisis, manajemen akademik, atau pengembangan aplikasi berbasis informasi tentang staf akademik universitas. Dengan melakukan scraping ini, kita dapat mengumpulkan data dengan lebih efisien daripada melakukan pencatatan manual, serta memungkinkan integrasi data dengan sistem atau aplikasi lainnya.
+Pada project kali ini dilakukan _scraping_ pada website http://dosen.unand.ac.id/. Website tersebut berisi informasi mengenai profil para dosen yang mengajar di universitas tersebut. Melalui _scraping_ ini, kita dapat mengumpulkan data seperti nama dosen, jabatan, fakultas tempat bekerja, status kepegawaian, dan jurusan atau bidang studi yang menjadi fokus utama dari masing-masing dosen. Data ini nantinya dapat digunakan untuk berbagai keperluan analisis, manajemen akademik, atau pengembangan aplikasi berbasis informasi tentang staf akademik universitas. Dengan melakukan _scraping_ ini, kita dapat mengumpulkan data dengan lebih efisien daripada melakukan pencatatan manual, serta memungkinkan integrasi data dengan sistem atau aplikasi lainnya.
 </p>
 
 ## :clipboard: **Dokumen**
