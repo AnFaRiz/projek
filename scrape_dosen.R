@@ -2,7 +2,6 @@ message('Loading Packages')
 library(rvest)
 library(tidyverse)
 library(mongolite)
-library(dplyr)
 
 message('Scraping Data')
 
@@ -22,7 +21,6 @@ for (letter in letters) {
     df_master <- rbind(df_master, a2)
   }
 }
-df_master <- filter(df_master, rowSums(df_master == "No results found.") != ncol(df_master))
 dosen <- df_master[,-1]
 dosen$Waktu_Scraping<-Sys.Date()
 
