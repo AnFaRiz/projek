@@ -22,10 +22,11 @@ for (letter in letters) {
     df_master <- rbind(df_master, a2)
   }
 }
+df_master <- df_master %>%
+  filter(rowSums(. == "No results found.") != ncol(.))
 dosen <- df_master[,-1]
 dosen$Waktu_Scraping<-Sys.Date()
-dosen <- dosen %>%
-  filter(rowSums(. == "No results found.") != ncol(.))
+
 
 #MONGODB
 message('Input Data to MongoDB Atlas')
